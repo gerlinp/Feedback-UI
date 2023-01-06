@@ -5,6 +5,7 @@ const resetBtn = document.querySelector('#reset')
 const panel = document.querySelector('#panel')
 const feedback = document.querySelector('#feedback')
 const feedbackContainer = document.querySelector('#feedback-container')
+const container = document.querySelector('#container')
 let selectedRating = ''
 let feedbackImg = ''
 let feedbackMsg = ''
@@ -38,7 +39,6 @@ ratingsContainer.addEventListener('click', (e) => {
             feedbackMsg = "Thank you!!!" 
             break;
     }
-
 })
 
 
@@ -46,16 +46,15 @@ sendBtn.addEventListener('click', (e) => {
     panel.classList.add('hide')
     feedbackContainer.classList.remove('hide')
     feedback.innerHTML = `
-
             <img src='${feedbackImg}' alt='feedbackMsg'>
             <strong>${feedbackMsg}</strong>
     `
 })
 
 resetBtn.addEventListener('click', () => {
-    console.log('hello')
-    panel.classList.add('hide')
-    feedbackContainer.classList.remove('hide')
+    removeActive()
+    panel.classList.remove('hide')
+    feedbackContainer.classList.add('hide')
 })
 
 function removeActive() {

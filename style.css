@@ -37,8 +37,9 @@ body {
   }
 
   #feedback {
-    display: block;
+    display: inline-flex;
     align-items: center;
+    flex-direction: column;
   }
 
 .panel-container strong {

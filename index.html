@@ -9,44 +9,44 @@
     <title>Feedback</title>
 </head>
 <body>
-    <div id="panel" class="panel-container">
-        <!-- <strong>How does my code make you feel?</strong> -->
-        <fieldset class="ratings-container">
-            <legend>How does my code make you feel?</legend>
-            <div class="rating">
-                <input type="radio" id="sick" name="drone" value="sick">
-                <label for="sick">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4160/4160768.png" alt="sick">
-                    <small>Sick</small>
-                </label>
-            </div>
+    <div id="container">
+        <div id="panel" class="panel-container">
+            <!-- <strong>How does my code make you feel?</strong> -->
+            <fieldset class="ratings-container">
+                <legend>How does my code make you feel?</legend>
+                <div class="rating">
+                    <input type="radio" id="sick" name="drone" value="sick">
+                    <label for="sick">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4160/4160768.png" alt="sick">
+                        <small>Sick</small>
+                    </label>
+                </div>
 
-            <div class="rating">
-                <input type="radio" id="lol" name="drone" value="lol">
-                <label for="lol">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4160/4160718.png" alt="jokes">
-                    <small>LOL</small>
-                </label>
-            </div>
+                <div class="rating">
+                    <input type="radio" id="lol" name="drone" value="lol">
+                    <label for="lol">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4160/4160718.png" alt="jokes">
+                        <small>LOL</small>
+                    </label>
+                </div>
 
-            <div class="rating">
-                <input type="radio" id="great" name="drone" value="great">
-                <label for="great">
-                    <img src="https://cdn-icons-png.flaticon.com/512/4160/4160724.png" alt="master">
-                    <small>Great</small>
-                </label>
-            </div>
-        </fieldset>
-       <button class="btn" id="send">Send Review</button> 
-    </div>
-
-    <div id="feedback-container" class="panel-container hide">
-        <div id="feedback">
+                <div class="rating">
+                    <input type="radio" id="great" name="drone" value="great">
+                    <label for="great">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4160/4160724.png" alt="master">
+                        <small>Great</small>
+                    </label>
+                </div>
+            </fieldset>
+        <button class="btn" id="send">Send Review</button> 
         </div>
-        <button class="btn" id="reset">Send Again?</button> 
+
+        <div id="feedback-container" class="panel-container hide">
+            <div id="feedback">
+            </div>
+            <button class="btn" id="reset">Send Again?</button> 
+        </div>
     </div>
-
-
     <script src="https://use.fontawesome.com/fd791a2db3.js"></script>
     <script src="script.js"></script>
 </body>
